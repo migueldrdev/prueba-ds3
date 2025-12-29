@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cable UTP AMP Categoría 6 CMR | DS3 Comunicaciones</title>
+    <meta
+      name="description"
+      content="Cable UTP AMP NetConnect Categoría 6, Chaqueta CMR, 23AWG. Modelo 6-1427200-4. Caja de 305m color azul. Excede estándares TIA/EIA e ISO."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ds3blue: {
+                DEFAULT: "#005eb8",
+                dark: "#004a99",
+                light: "#337bc6",
+              },
+              ds3red: { DEFAULT: "#e31c23" },
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      #main-image {
+        transition: opacity 0.2s ease-in-out;
+      }
+
+      /* Animación del Drawer Móvil */
+      #mobile-drawer {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .drawer-open {
+        transform: translateX(0) !important;
+      }
+
+      .drawer-closed {
+        transform: translateX(-100%) !important;
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Cable UTP AMP Categoría 6 Chaqueta CMR - Caja 305m",
+        "image": [
+          "https://www.ds3comunicaciones.com/AMP/images/Caja.jpg",
+          "https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
+        ],
+        "sku": "6-1427200-4",
+        "brand": { "@type": "Brand", "name": "AMP Netconnect" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.ds3comunicaciones.com/AMP/6-1427200-4.html",
+          "priceCurrency": "USD",
+          "price": "187.00",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    </script>
+  </head>
+
+  <body class="bg-slate-50 text-slate-700 font-sans flex flex-col min-h-screen">
+    <div
+      id="drawer-overlay"
+      class="fixed inset-0 bg-black/50 z-40 hidden transition-opacity opacity-0"
+    ></div>
+
+    <div
+      id="mobile-drawer"
+      class="fixed inset-y-0 left-0 w-[80%] max-w-sm bg-white z-50 shadow-2xl drawer-closed overflow-y-auto"
+    >
+      <div class="p-4 border-b flex justify-between items-center bg-slate-50">
+        <img
+          src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg"
+          alt="Logo"
+          class="h-8"
+        />
+        <button
+          id="close-drawer"
+          class="text-slate-500 hover:text-ds3red text-xl"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="p-4 space-y-6">
+        <nav class="flex flex-col gap-2">
+          <a href="index.html" class="font-medium text-slate-700 py-2 border-b"
+            ><i class="fas fa-home mr-2 text-ds3blue"></i> Inicio</a
+          >
+          <a href="#" class="font-medium text-slate-700 py-2 border-b"
+            ><i class="fas fa-envelope mr-2 text-ds3blue"></i> Contacto</a
+          >
+        </nav>
+
+        <div>
+          <h3 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+            <i class="fas fa-tags text-ds3blue"></i> Nuestras Marcas
+          </h3>
+          <div id="mobile-brands-grid" class="grid grid-cols-3 gap-2"></div>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+            <i class="fas fa-file-invoice-dollar text-ds3blue"></i> Listas de
+            Precios
+          </h3>
+          <ul id="mobile-prices-list" class="space-y-1 text-sm"></ul>
+        </div>
+      </div>
+    </div>
+
+    <header class="bg-white shadow-sm sticky top-0 z-30">
+      <div
+        class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4"
+      >
+        <button
+          id="open-drawer"
+          class="lg:hidden text-slate-600 text-2xl focus:outline-none hover:text-ds3blue"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <a href="index.html" class="flex-shrink-0">
+          <img
+            src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg"
+            alt="DS3 Comunicaciones"
+            class="h-10 md:h-12 w-auto object-contain"
+          />
+        </a>
+
+        <div class="hidden md:flex flex-1 max-w-xl mx-8">
+          <div class="relative w-full">
+            <input
+              type="text"
+              placeholder="Buscar productos..."
+              class="w-full border border-gray-300 rounded-l-md py-2 px-4 focus:ring-2 focus:ring-ds3blue focus:border-transparent outline-none text-sm"
+            />
+            <button
+              class="absolute right-0 top-0 h-full bg-ds3blue text-white px-4 rounded-r-md hover:bg-ds3blue-dark transition"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-6 text-sm font-medium">
+          <a
+            href="mailto:netperu100@hotmail.com"
+            class="flex items-center gap-2 text-slate-600 hover:text-ds3blue"
+          >
+            <i class="far fa-envelope text-lg"></i> netperu100@hotmail.com
+          </a>
+          <a
+            href="https://wa.me/51994428965"
+            class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition shadow-md flex items-center gap-2"
+          >
+            <i class="fab fa-whatsapp text-lg"></i> 994 428 965
+          </a>
+        </div>
+
+        <div class="flex items-center gap-4 lg:hidden">
+          <a href="#" class="text-slate-600 text-xl"
+            ><i class="fas fa-search"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-gray-100 border-b">
+      <div class="max-w-[1400px] mx-auto px-4 py-2">
+        <ol
+          class="flex text-xs md:text-sm text-slate-500 overflow-x-auto whitespace-nowrap gap-2"
+        >
+          <li><a href="index.html" class="hover:text-ds3blue">Inicio</a></li>
+          <li>/</li>
+          <li><a href="#" class="hover:text-ds3blue">Marcas</a></li>
+          <li>/</li>
+          <li><a href="#" class="hover:text-ds3blue">AMP Netconnect</a></li>
+          <li>/</li>
+          <li class="text-ds3blue font-semibold">6-1427200-4</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <aside class="hidden lg:block lg:col-span-2 sticky top-24">
+          <div
+            class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+          >
+            <h3
+              class="bg-gray-50 px-4 py-3 font-bold text-slate-800 border-b text-sm uppercase"
+            >
+              Nuestras Marcas
+            </h3>
+            <div
+              id="desktop-brands-grid"
+              class="p-2 grid grid-cols-2 gap-2 max-h-[calc(100vh-200px)] overflow-y-auto scrollbar-hide"
+            ></div>
+          </div>
+        </aside>
+
+        <main class="lg:col-span-8">
+          <div
+            class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-8"
+          >
+            <div class="flex flex-col md:flex-row gap-8">
+              <div class="w-full md:w-1/2">
+                <div
+                  class="border rounded-lg p-4 h-[350px] flex items-center justify-center mb-4 relative group"
+                >
+                  <img
+                    id="main-image"
+                    src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
+                    alt="Producto Principal"
+                    class="max-h-full max-w-full object-contain"
+                  />
+                  <div
+                    class="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition pointer-events-none"
+                  ></div>
+                </div>
+                <div
+                  class="flex gap-2 justify-center overflow-x-auto"
+                  id="thumbnails-container"
+                >
+                  <button
+                    class="thumb-btn border-2 border-ds3blue rounded p-1 w-16 h-16"
+                    data-src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
+                  >
+                    <img
+                      src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
+                      class="w-full h-full object-contain"
+                    />
+                  </button>
+                  <button
+                    class="thumb-btn border-2 border-transparent rounded p-1 w-16 h-16 hover:border-blue-200"
+                    data-src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
+                  >
+                    <img
+                      src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
+                      class="w-full h-full object-contain"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <div class="w-full md:w-1/2">
+                <span
+                  class="text-xs font-bold text-ds3blue bg-blue-50 px-2 py-1 rounded mb-2 inline-block"
+                  >SKU: 6-1427200-4</span
+                >
+                <h1 class="text-2xl font-bold text-slate-900 mb-4">
+                  Cable UTP AMP Categoría 6 Chaqueta CMR, Azul - Caja 305m
+                </h1>
+
+                <div class="mb-6 pb-6 border-b border-gray-100">
+                  <p class="text-gray-400 text-sm line-through mb-1">
+                    Precio Lista: U$ 210.00
+                  </p>
+                  <div class="flex items-end gap-2 mb-4">
+                    <span class="text-4xl font-bold text-ds3blue"
+                      >U$ 187.00</span
+                    >
+                    <span class="text-xs text-gray-500 mb-2">Inc. IGV</span>
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <button
+                      class="w-full bg-ds3blue hover:bg-ds3blue-dark text-white font-bold py-3 rounded-lg shadow-lg shadow-blue-500/30 transition flex items-center justify-center gap-2"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Agregar al Pedido
+                    </button>
+                    <a
+                      href="https://wa.me/51994428965"
+                      target="_blank"
+                      class="w-full bg-white border-2 border-green-500 text-green-600 hover:bg-green-50 font-bold py-3 rounded-lg transition flex items-center justify-center gap-2"
+                    >
+                      <i class="fab fa-whatsapp text-xl"></i> Consultar por
+                      WhatsApp
+                    </a>
+                  </div>
+                </div>
+
+                <div class="prose prose-sm text-slate-600 mb-3">
+                  <p>
+                    <strong>Descripción:</strong> Cable UTP Cat 6 AMP NetConnect
+                    (CommScope), diseñado para exceder los estándares
+                    TIA/EIA-568-B.2-1. Ideal para Gigabit Ethernet.
+                  </p>
+                  <ul class="list-disc pl-4 mt-2 space-y-1">
+                    <li>Calibre: 23 AWG (Cobre sólido)</li>
+                    <li>Chaqueta: CMR (Riser)</li>
+                    <li>Color: Azul</li>
+                    <li>Longitud: 305 metros (1000 pies)</li>
+                  </ul>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                  <a
+                    href="https://www.ds3comunicaciones.com/AMP/files/6-1427200-4-DS.pdf"
+                    class="flex items-center gap-2 px-5 py-2.5 bg-slate-100 text-slate-700 rounded-lg hover:bg-ds3blue hover:text-white transition font-medium text-sm group"
+                  >
+                    <i
+                      class="far fa-file-pdf text-ds3red group-hover:text-white transition"
+                    ></i>
+                    Descargar Ficha Técnica (PDF)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-10">
+            <div
+              class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden"
+            >
+              <div class="bg-gray-50 px-6 py-4 border-b">
+                <h3 class="font-bold text-slate-800">
+                  <i class="fas fa-list-alt mr-2 text-ds3blue"></i>
+                  Especificaciones Técnicas
+                </h3>
+              </div>
+              <div class="p-0 overflow-x-auto">
+                <table class="w-full text-sm text-left">
+                  <tbody class="divide-y divide-gray-100">
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-6 py-3 font-medium text-slate-500 w-1/3">
+                        Marca
+                      </td>
+                      <td class="px-6 py-3 font-semibold text-slate-800">
+                        AMP Netconnect / CommScope
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-6 py-3 font-medium text-slate-500">
+                        Categoría
+                      </td>
+                      <td class="px-6 py-3 text-slate-800">Cat 6</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-6 py-3 font-medium text-slate-500">
+                        Voltaje
+                      </td>
+                      <td class="px-6 py-3 text-slate-800">300 VAC / VDC</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-6 py-3 font-medium text-slate-500">
+                        Temperatura Operación
+                      </td>
+                      <td class="px-6 py-3 text-slate-800">-20°C a +60°C</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-6 py-3 font-medium text-slate-500">NVP</td>
+                      <td class="px-6 py-3 text-slate-800">70%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3
+              class="font-bold text-xl text-slate-800 mb-6 border-l-4 border-ds3blue pl-3"
+            >
+              Productos Relacionados
+            </h3>
+            <div
+              id="related-grid"
+              class="grid grid-cols-2 md:grid-cols-4 gap-4"
+            ></div>
+          </div>
+        </main>
+
+        <aside class="hidden lg:block lg:col-span-2 sticky top-24">
+          <div
+            class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+          >
+            <h3
+              class="bg-gray-50 px-4 py-3 font-bold text-slate-800 border-b text-sm uppercase"
+            >
+              Listas de Precios
+            </h3>
+            <ul
+              id="desktop-prices-list"
+              class="divide-y divide-gray-100 text-sm"
+            ></ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-300 mt-auto">
+      <div
+        class="max-w-[1400px] mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8"
+      >
+        <div>
+          <img
+            src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg"
+            class="h-10 mb-4"
+          />
+          <p class="text-sm text-slate-400">
+            Expertos en soluciones de Networking y Cableado Estructurado en
+            Perú.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Contacto</h4>
+          <ul class="text-sm space-y-2">
+            <li><i class="fas fa-phone mr-2 text-ds3blue"></i> 994 428 965</li>
+            <li>
+              <i class="fas fa-envelope mr-2 text-ds3blue"></i>
+              netperu100@hotmail.com
+            </li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-white font-bold mb-4">Ubicación</h4>
+          <p class="text-sm text-slate-400">
+            Lima, Perú. Envíos a todo el país.
+          </p>
+        </div>
+      </div>
+      <div
+        class="border-t border-slate-800 py-4 text-center text-xs text-slate-500"
+      >
+        &copy; 2024 DS3 Comunicaciones. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <script>
+      const brandsData = [
+        {
+          name: "ALFA",
+          img: "http://www.ds3comunicaciones.com/belden/images/ALFA_logo1.gif",
+          link: "#",
+        },
+        {
+          name: "AIR LIVE",
+          img: "http://www.ds3comunicaciones.com/belden/images/airlivelogo.gif",
+          link: "#",
+        },
+        {
+          name: "ANDREW",
+          img: "http://www.ds3comunicaciones.com/andrew/images/logo_andrew.jpg",
+          link: "#",
+        },
+        {
+          name: "AMP",
+          img: "http://www.ds3comunicaciones.com/belden/images/amp_logo2-91x20.jpg",
+          link: "#",
+        },
+        {
+          name: "AMPHENOL",
+          img: "http://www.ds3comunicaciones.com/belden/images/amphenol_logo-100x21.jpg",
+          link: "#",
+        },
+        {
+          name: "BELDEN",
+          img: "http://www.ds3comunicaciones.com/belden/images/Belden-Logo-93x15.jpg",
+          link: "#",
+        },
+        {
+          name: "CISCO",
+          img: "http://www.ds3comunicaciones.com/cisco/images/logo-cisco.gif",
+          link: "#",
+        },
+        {
+          name: "DAHUA",
+          img: "http://www.ds3comunicaciones.com/dahua/images/dahua_logo.jpg",
+          link: "#",
+        },
+        {
+          name: "DLINK",
+          img: "http://www.ds3comunicaciones.com/belden/images/D-Link_Logo-100x26.jpg",
+          link: "#",
+        },
+        {
+          name: "DIXON",
+          img: "http://www.ds3comunicaciones.com/belden/images/dixon_logo-100x19.jpg",
+          link: "#",
+        },
+        {
+          name: "FIBREFAB",
+          img: "http://www.ds3comunicaciones.com/FibreFab/images/logo_fibrefab.png",
+          link: "#",
+        },
+        {
+          name: "LANPRO",
+          img: "http://www.ds3comunicaciones.com/lanpro/images/lanpro_logo.jpg",
+          link: "#",
+        },
+        {
+          name: "MIKROTIK",
+          img: "http://www.ds3comunicaciones.com/belden/images/mikrotik_logo-100x24.png",
+          link: "#",
+        },
+        {
+          name: "PANDUIT",
+          img: "http://www.ds3comunicaciones.com/panduit/images/panduit_logo.jpg",
+          link: "#",
+        },
+        {
+          name: "SATRA",
+          img: "http://www.ds3comunicaciones.com/satra/images/satra.JPG",
+          link: "#",
+        },
+        {
+          name: "SIEMON",
+          img: "http://www.ds3comunicaciones.com/siemon/images/siemon_logo1.GIF",
+          link: "#",
+        },
+        {
+          name: "TPLINK",
+          img: "http://www.ds3comunicaciones.com/belden/images/tp-link_logo-100x13.jpg",
+          link: "#",
+        },
+        {
+          name: "TRENDNET",
+          img: "http://www.ds3comunicaciones.com/belden/images/trendnet_logo-100x20.jpg",
+          link: "#",
+        },
+        {
+          name: "UBIQUITI",
+          img: "http://www.ds3comunicaciones.com/belden/images/ubnt_logo-100x47.png",
+          link: "#",
+        },
+      ];
+
+      const priceListsData = [
+        "AMP",
+        "Amphenol",
+        "Andrew",
+        "APC",
+        "CISCO",
+        "D-Link",
+        "Dixon",
+        "Energit",
+        "Fibra",
+        "HP",
+        "Mikrotik",
+        "Nexxt Solutions",
+        "Panduit",
+        "Siemon",
+        "Teldor",
+        "TRENDnet",
+        "Ubiquiti",
+      ];
+
+      const relatedProducts = [
+        {
+          name: "Jack Cat 6 Azul",
+          price: 4.5,
+          img: "https://placehold.co/200x200/f1f5f9/005eb8?text=Jack",
+        },
+        {
+          name: "Patch Cord 1m",
+          price: 3.2,
+          img: "https://placehold.co/200x200/f1f5f9/005eb8?text=Patch",
+        },
+        {
+          name: "Tester Red",
+          price: 25.0,
+          img: "https://placehold.co/200x200/f1f5f9/005eb8?text=Tester",
+        },
+        {
+          name: "Conector RJ45 (100u)",
+          price: 15.0,
+          img: "https://placehold.co/200x200/f1f5f9/005eb8?text=RJ45",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // 1. RENDERIZAR SIDEBARS (ESCRITORIO)
+        const deskBrands = document.getElementById("desktop-brands-grid");
+        const deskPrices = document.getElementById("desktop-prices-list");
+
+        // Marcas Desktop
+        brandsData.forEach((b) => {
+          deskBrands.innerHTML += `
+                <a href="${b.link}" class="border border-gray-100 rounded p-1 hover:border-ds3blue hover:shadow-md transition flex items-center justify-center bg-white h-12">
+                    <img src="${b.img}" alt="${b.name}" class="max-h-full max-w-full object-contain">
+                </a>`;
+        });
+
+        // Precios Desktop
+        priceListsData.forEach((p) => {
+          deskPrices.innerHTML += `
+                <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-ds3blue transition flex justify-between items-center group">
+                    <span>Lista ${p}</span>
+                    <i class="fas fa-download text-xs opacity-0 group-hover:opacity-100"></i>
+                </a></li>`;
+        });
+
+        // 2. RENDERIZAR DRAWER (MÓVIL)
+        const mobileBrands = document.getElementById("mobile-brands-grid");
+        const mobilePrices = document.getElementById("mobile-prices-list");
+
+        // Marcas Móvil
+        brandsData.forEach((b) => {
+          mobileBrands.innerHTML += `
+                <a href="${b.link}" class="border border-gray-100 rounded p-1 flex items-center justify-center bg-white h-10 shadow-sm">
+                    <img src="${b.img}" alt="${b.name}" class="max-h-full max-w-full object-contain">
+                </a>`;
+        });
+
+        // Precios Móvil
+        priceListsData.forEach((p) => {
+          mobilePrices.innerHTML += `
+                <li><a href="#" class="block py-1.5 px-2 text-slate-600 hover:text-ds3blue border-l-2 border-transparent hover:border-ds3blue bg-gray-50 rounded">
+                    Lista de precios ${p}
+                </a></li>`;
+        });
+
+        // 3. PRODUCTOS RELACIONADOS
+        const relatedContainer = document.getElementById("related-grid");
+        relatedProducts.forEach((prod) => {
+          relatedContainer.innerHTML += `
+                <a href="#" class="group border rounded-lg p-3 hover:shadow-lg transition bg-white">
+                    <div class="aspect-square bg-gray-100 mb-2 rounded flex items-center justify-center">
+                        <img src="${
+                          prod.img
+                        }" class="mix-blend-multiply max-h-20 group-hover:scale-110 transition">
+                    </div>
+                    <h4 class="font-bold text-sm text-slate-700 truncate">${
+                      prod.name
+                    }</h4>
+                    <p class="text-ds3blue font-bold">U$ ${prod.price.toFixed(
+                      2
+                    )}</p>
+                </a>`;
+        });
+
+        // 4. LÓGICA DRAWER MÓVIL
+        const drawer = document.getElementById("mobile-drawer");
+        const overlay = document.getElementById("drawer-overlay");
+        const openBtn = document.getElementById("open-drawer");
+        const closeBtn = document.getElementById("close-drawer");
+
+        function toggleDrawer(show) {
+          if (show) {
+            drawer.classList.remove("drawer-closed");
+            drawer.classList.add("drawer-open");
+            overlay.classList.remove("hidden");
+            // Timeout para la opacidad (fade in)
+            setTimeout(() => overlay.classList.remove("opacity-0"), 10);
+            document.body.style.overflow = "hidden"; // Bloquear scroll body
+          } else {
+            drawer.classList.remove("drawer-open");
+            drawer.classList.add("drawer-closed");
+            overlay.classList.add("opacity-0");
+            setTimeout(() => overlay.classList.add("hidden"), 300);
+            document.body.style.overflow = ""; // Habilitar scroll body
+          }
+        }
+
+        openBtn.addEventListener("click", () => toggleDrawer(true));
+        closeBtn.addEventListener("click", () => toggleDrawer(false));
+        overlay.addEventListener("click", () => toggleDrawer(false));
+
+        // 5. CAMBIO DE IMAGEN PRINCIPAL
+        const mainImg = document.getElementById("main-image");
+        const thumbs = document.querySelectorAll(".thumb-btn");
+
+        thumbs.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            thumbs.forEach((t) =>
+              t.classList.replace("border-ds3blue", "border-transparent")
+            );
+            this.classList.replace("border-transparent", "border-ds3blue");
+
+            mainImg.style.opacity = 0.5;
+            setTimeout(() => {
+              mainImg.src = this.dataset.src;
+              mainImg.style.opacity = 1;
+            }, 150);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
