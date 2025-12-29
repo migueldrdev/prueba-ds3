@@ -573,37 +573,37 @@
 
       const relatedProducts = [
         {
-        name: "Cable UTP Cat 6 de 23 AWG, CHAQUETA LSZH marca AMP",
-        brand: "AMP Netconnect",
-        price: 159.00,
-        img: "https://www.ds3comunicaciones.com/AMP/images/219585-2_front.jpg", 
-        link: "https://www.ds3comunicaciones.com/AMP/219585-2.html",
-        sku: "219585-2"
-    },
-    {
-        name: "Cable UTP AMP Categoria 6A Apantallado Chaqueta LSZH",
-        brand: "AMP Netconnect",
-        price: 229.00,
-        img: "https://www.ds3comunicaciones.com/AMP/images/1859218-2.jpg", 
-        link: "https://www.ds3comunicaciones.com/AMP/1859218-2.html",
-        sku: "1859218-2"
-    },
-    {
-        name: "Cable UTP AMP Categoria 6 Chaqueta CM",
-        brand: "AMP Netconnect",
-        price: 139.00,
-        img: "https://www.ds3comunicaciones.com/AMP/images/1427254-4-1.jpg",
-        link: "https://www.ds3comunicaciones.com/AMP/1427254-4.html",
-        sku: "1427254-4"
-    },
-    {
-        name: "Cable UTP AMP Categoria 6 Chaqueta LSZH",
-        brand: "AMP Netconnect",
-        price: 179.00,
-        img: "https://www.ds3comunicaciones.com/AMP/images/1859218-2.jpg",
-        link: "https://www.ds3comunicaciones.com/AMP/1859345-2.html",
-        sku: "1859345-2"
-    }
+          name: "Cable UTP Cat 6 de 23 AWG, CHAQUETA LSZH marca AMP",
+          brand: "AMP Netconnect",
+          price: 159.0,
+          img: "https://www.ds3comunicaciones.com/AMP/images/219585-2_front.jpg",
+          link: "https://www.ds3comunicaciones.com/AMP/219585-2.html",
+          sku: "219585-2",
+        },
+        {
+          name: "Cable UTP AMP Categoria 6A Apantallado Chaqueta LSZH",
+          brand: "AMP Netconnect",
+          price: 229.0,
+          img: "https://www.ds3comunicaciones.com/AMP/images/1859218-2.jpg",
+          link: "https://www.ds3comunicaciones.com/AMP/1859218-2.html",
+          sku: "1859218-2",
+        },
+        {
+          name: "Cable UTP AMP Categoria 6 Chaqueta CM",
+          brand: "AMP Netconnect",
+          price: 139.0,
+          img: "https://www.ds3comunicaciones.com/AMP/images/1427254-4-1.jpg",
+          link: "https://www.ds3comunicaciones.com/AMP/1427254-4.html",
+          sku: "1427254-4",
+        },
+        {
+          name: "Cable UTP AMP Categoria 6 Chaqueta LSZH",
+          brand: "AMP Netconnect",
+          price: 179.0,
+          img: "https://www.ds3comunicaciones.com/AMP/images/1859218-2.jpg",
+          link: "https://www.ds3comunicaciones.com/AMP/1859345-2.html",
+          sku: "1859345-2",
+        },
       ];
 
       document.addEventListener("DOMContentLoaded", () => {
@@ -652,7 +652,9 @@
         const relatedContainer = document.getElementById("related-grid");
         relatedProducts.forEach((prod) => {
           relatedContainer.innerHTML += `
-                <a href="${prod.link}" class="group border rounded-lg p-3 hover:shadow-lg transition bg-white">
+                <a href="${
+                  prod.link
+                }" class="group border rounded-lg p-3 hover:shadow-lg transition bg-white">
                     <div class="aspect-square bg-gray-100 mb-2 rounded flex items-center justify-center">
                         <img src="${
                           prod.img
