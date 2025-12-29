@@ -24,4 +24,4 @@ Este repositorio contiene la solución propuesta para la modernización de la fi
 - JavaScript (ES6+)
 
 ## 🔗 Demo
-Puedes ver el resultado final funcionando aquí: [PON AQUÍ TU LINK DE GITHUB PAGES]
+Puedes ver el resultado final funcionando aquí: https://migueldrdev.github.io/prueba-ds3/6-1427200-4.html
